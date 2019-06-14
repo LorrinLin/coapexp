@@ -4,7 +4,7 @@ import (
 	"testing"
 	"os"
 	"log"
-	coap "github.com/lorrin/go-coap"
+	coap "github.com/dustin/go-coap"
 )
 
 func BenchmarkLocalOne(b *testing.B){
