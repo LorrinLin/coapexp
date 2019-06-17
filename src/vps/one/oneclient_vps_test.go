@@ -25,7 +25,7 @@ func BenchmarkVpsOne(b *testing.B){
 		log.Println("err in Dial..")
 	}
 	for i:=0;i<b.N;i++{
-		c.Send(req)
+		rv, err := c.Send(req)
 		if err != nil{
 			if rv != nil{
 				if err!= nil{
